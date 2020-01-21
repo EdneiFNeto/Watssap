@@ -5,13 +5,13 @@ import android.content.SharedPreferences;
 
 import com.watssap.model.Usuario;
 
-public class PreferemncesUtils {
+public class PreferencesUtils {
 
     private static Context context;
     public static String USUARIO_ID="usuario_id";
     private static String PREFERENCES="preferences";
 
-    public PreferemncesUtils(Context context) {
+    public PreferencesUtils(Context context) {
         this.context = context;
     }
 

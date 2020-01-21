@@ -15,23 +15,12 @@ import com.watssap.model.Contact;
 
 import java.util.ArrayList;
 
-public class ContactActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
-
-        Contact c = new Contact();
-        c.setId(2);
-        c.setName("Jose");
-        ArrayList<Contact> contacts = new ArrayList();
-        contacts.add(c);
-
-        ContectAdapter adapter = new ContectAdapter(this, contacts);
-        RecyclerView recycleview = findViewById(R.id.recycleViewContacts);
-        recycleview.setAdapter(adapter);
-
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         FragmentManager fm = getSupportFragmentManager();
